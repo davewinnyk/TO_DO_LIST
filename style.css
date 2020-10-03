@@ -8,7 +8,6 @@ body {
     background-image: radial-gradient(circle, #1FACE0, #2F7994);
     color:  #E3DA54;
     font-family: 'Oxygen', sans-serif;
-    text
     min-height: 100vh;
 }
 
@@ -24,4 +23,12 @@ form {
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
 }
