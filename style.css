@@ -83,3 +83,6 @@ font-size: 1.25rem;
     cursor: pointer;
     font-size: 1.25rem;
     }
+.todo-item {
+    padding: 0rem 0.5rem;
+}

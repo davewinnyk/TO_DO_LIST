@@ -17,6 +17,8 @@ function addToDo(event){
     //Creates LI
     const newTodo = document.createElement('li');
     newTodo.innerText = todoInput.value;
+    if (todoInput.value != "")
+    {    
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
     //Completed button
@@ -33,4 +35,9 @@ function addToDo(event){
     todoList.appendChild(todoDiv);
     //Clear Field
     todoInput.value= "";
+}
+    else
+    {
+        todoInput.value= ""; 
+    }
 }
