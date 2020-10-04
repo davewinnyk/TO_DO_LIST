@@ -86,3 +86,8 @@ font-size: 1.25rem;
 .todo-item {
     padding: 0rem 0.5rem;
 }
+.fa-trash-alt,
+.fa-check-circle {
+    pointer-events: none;
+}
+

@@ -5,7 +5,7 @@ const todoList = document.querySelector('.todo-list');
 
 //Event Listeners
 todoButton.addEventListener('click', addToDo);
-
+todoList.addEventListener('click', deleteCheck);
 
 
 //Functions
@@ -41,3 +41,21 @@ function addToDo(event){
         todoInput.value= ""; 
     }
 }
+
+function deleteCheck(e)
+{
+    const item = e.target;
+if(item.classList[0] === "trash-btn")
+{
+    const todo = item.parentElement;
+    todo.remove();
+}
+if(item.classList[0] === "complete-btn")
+{
+    const todo = item.parentElement;
+    todo.classList.toggle("completed");
+}
+    }
+
+
+    //left off at 37:02 https://www.youtube.com/watch?v=Ttf3CEsEwMQ
